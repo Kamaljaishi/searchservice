@@ -28,7 +28,7 @@ class CityService{
             const city=await this.CityRepository.updateCity(data,cityId);
             return city;
         } catch (error) {
-            console.log("Error in service layer");
+            console.log("Error in service layers");
             
         }
 
