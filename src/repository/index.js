@@ -1,3 +1,3 @@
-modeule.exports={
+module.exports={
     CityRepository:require('./db-repo')
 }

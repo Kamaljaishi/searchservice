@@ -3,6 +3,7 @@ class CityService{
     constructor(){
         this.CityRepository = new CityRepository();
     }
+   
     async createCity(data) {
         try {
           const city=await this.CityRepository.createCity(data);  
@@ -45,3 +46,4 @@ class CityService{
 
     }
 }
+module.exports = CityService;
