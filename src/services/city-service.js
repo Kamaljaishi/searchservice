@@ -41,7 +41,7 @@ class CityService{
             
         } catch (error) {
             console.log("Error in service layer");
-            
+            0
         }
 
     }
