@@ -1,3 +1,4 @@
+const { query } = require('express');
 const { CityService }=require('../services/index');
 const cityService=new CityService();
 const create=async (req,res)=>{
@@ -88,7 +89,7 @@ const get=async (req,res)=>{
 }
 const getall= async (req,res)=>{
     try {
-        const response=await cityService.getAll();
+        const response=await cityService.getAll(req.params);
         return res.status(200).json({
             data:response,
             success:true,
